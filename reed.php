@@ -4,6 +4,8 @@ $hasil=mysqli_query($kon,"SELECT * FROM penulis");
 while($baris=mysqli_fetch_array($hasil))
 {
     echo $baris['id']."". $baris['NamaPenulis'];
+
 echo"<br/>"; 
+echo "$baris[id] $baris[NamaPenulis] <br>";
 }
 ?>
